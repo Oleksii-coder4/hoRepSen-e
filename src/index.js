@@ -16,7 +16,7 @@ minusButton.addEventListener('click', function () {
     }
 });
 startButton.addEventListener('click', function (event) {
-    if (input.value && typeof ( parseInt ( input.value ) ) == 'number') {
+    if (input.value && typeof ( parseInt ( input.value ) ) == 'number' && +input.value != 0) {
         inputBlock.classList.add('display-none');
         outputBlock.classList.remove('display-none');
         let minutesQuantity = +input.value;
